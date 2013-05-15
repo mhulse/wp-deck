@@ -8,16 +8,22 @@
 
 
 **Goal:**  
-Give bloggers and easy way to add/edit decks when creating/modifying posts via any device.
+Give bloggers an easy way to add/edit decks when creating/modifying posts via any device.
+
+**Solution**  
+Use a custom field or meta box.
 
 **Problem:**  
-At this time, WordPress mobile apps have limited options for when it comes to fields they can access (i.e. no custom field support).
+At this time, WordPress mobile apps have limited options for when it comes to fields they can access (i.e. no custom field or meta box support).
 
 **Solution:**  
-Put the deck in the title field separated by a delimter. This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
+Put the deck in the title field separated by a delimter.
+
+**Code:**  
+This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
 
 **Inspiration:**  
-See the [discussion here](http://wordpress.stackexchange.com/questions/99039/filtering-the-title-with-option-to-return-subhead).
+See this [discussion here](http://wordpress.stackexchange.com/questions/99039/filtering-the-title-with-option-to-return-subhead).
 
 ---
 
