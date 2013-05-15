@@ -1,4 +1,4 @@
-## WordPress Deck
+# WordPress Deck
 
 ### A simple way to add a deck (aka subhead) to your posts using the post title field and a specified delimiter.
 
@@ -6,7 +6,7 @@
 
 #### ABOUT
 
-A recent WP project/theme I've been working on required that mobile bloggers have the ability to add decks when creating/editing posts. We quickly realized that the WP-capable apps have field limitations (i.e. they don't have access to custom fields); I thought a decent solution would be to put the deck in the title field separated by a delimter. This plugin parses the title field to separate the title from the deck.
+A recent WP project/theme I've been working on required that mobile bloggers have the ability to add decks when creating/editing posts. I quickly realized that the WP-capable apps have field limitations (i.e. the apps I tested don't interact with custom fields); long story short, I thought a decent solution would be to put the deck in the title field separated by a delimter. This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
 
 * For more information, see the [discussion here](http://wordpress.stackexchange.com/questions/99039/filtering-the-title-with-option-to-return-subhead).
 
