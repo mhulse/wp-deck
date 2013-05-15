@@ -11,6 +11,34 @@
 
 ---
 
+#### USAGE
+
+So far, I've only tested this code as a ["Must Use" plugin](http://codex.wordpress.org/Must_Use_Plugins), so drop `deck.php` into `wp-content/mu-plugins/`.
+
+On the template level:
+
+```html
+<header>
+	
+	<hgroup>
+		
+		<h1><?=the_title()?></h1>
+		
+		<?php if (has_deck()): ?>
+			
+			<h2 class="sh4"><?=get_deck()?></h2>
+			
+		<?php endif; ?>
+		
+	</hgroup>
+	
+</header>
+```
+
+Feedback? Use [this repo's issue tracker](https://github.com/mhulse/wp-deck/issues). Thanks!
+
+---
+
 #### LEGAL
 
 Copyright &copy; 2013 [First Last](http://site.com)/[Company Name](http://foo.com)

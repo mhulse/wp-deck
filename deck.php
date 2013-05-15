@@ -70,7 +70,7 @@ class Deck
 	 * @return void
 	 * @see http://codex.wordpress.org/Plugin_API/Action_Reference/init
 	 * @see http://wordpress.stackexchange.com/a/5727/32387
-	 * @see http://codex.wordpress.org/Function_Reference/add_action
+	 * @see http://codex.wordpress.org/Function_Reference/add_filter
 	 */
 	
 	public function init() {
@@ -79,10 +79,10 @@ class Deck
 		if ( ! is_admin()) {
 			
 			# Filter `the_title`:
-			add_action('the_title', array($this, 'the_title'), 10, 1); // Is "10" an optimal priority in this case?
+			add_filter('the_title', array($this, 'the_title'), 10, 1); // Is "10" an optimal priority in this case?
 			
 			# Filter `single_post_title`:
-			add_action('single_post_title', array($this, 'the_title'), 10, 1); // IBID?
+			add_filter('single_post_title', array($this, 'the_title'), 10, 1); // IBID?
 			
 		}
 		
@@ -93,7 +93,6 @@ class Deck
 	 *
 	 * @access public
 	 * @param $title { string } The post title.
-	 * @param $id { integer } The post ID.
 	 * @return { string } The filterd post title.
 	 */
 	
