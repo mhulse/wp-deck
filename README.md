@@ -6,9 +6,18 @@
 
 #### ABOUT
 
-A recent WP project/theme I've been working on required that mobile bloggers have the ability to add decks when creating/editing posts. I quickly realized that the WP-capable apps have field limitations (i.e. the apps I tested don't interact with custom fields); long story short, I thought a decent solution would be to put the deck in the title field separated by a delimter. This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
 
-* For more information, see the [discussion here](http://wordpress.stackexchange.com/questions/99039/filtering-the-title-with-option-to-return-subhead).
+**Goal:**  
+Give bloggers the ability to add/edit decks when creating/modifying posts via their desktop computers and/or WordPress smartphone apps.
+
+**Problem:**  
+At this time, WordPress iPhone apps have limited options for when it comes to fields they can access (i.e. no custom field support).
+
+**Solution:**  
+Put the deck in the title field separated by a delimter. This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
+
+**Inspiration:**  
+See the [discussion here](http://wordpress.stackexchange.com/questions/99039/filtering-the-title-with-option-to-return-subhead).
 
 ---
 
@@ -64,7 +73,7 @@ Sorry that it's not easier. :(
 
 #### LEGAL
 
-Copyright &copy; 2013 [First Last](http://site.com)/[Company Name](http://foo.com)
+Copyright &copy; 2013 [Micky Hulse](http://hulse.me)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 
