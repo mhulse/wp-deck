@@ -8,10 +8,10 @@
 
 
 **Goal:**  
-Give bloggers the ability to add/edit decks when creating/modifying posts via their desktop computers and/or WordPress smartphone apps.
+Give bloggers and easy way to add/edit decks when creating/modifying posts via any device.
 
 **Problem:**  
-At this time, WordPress iPhone apps have limited options for when it comes to fields they can access (i.e. no custom field support).
+At this time, WordPress mobile apps have limited options for when it comes to fields they can access (i.e. no custom field support).
 
 **Solution:**  
 Put the deck in the title field separated by a delimter. This plugin parses the title field, finds the delimiter and separates the actual title from the desired deck. **Woohoo!**
