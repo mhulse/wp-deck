@@ -13,29 +13,49 @@
 
 #### USAGE
 
-So far, I've only tested this code as a ["Must Use" plugin](http://codex.wordpress.org/Must_Use_Plugins), so drop `deck.php` into `wp-content/mu-plugins/`.
+**NOTE:** So far, I've only tested this code as a ["Must Use" plugin](http://codex.wordpress.org/Must_Use_Plugins), so ...
 
-On the template level:
+1. Drop `deck.php` into `wp-content/mu-plugins/`.
 
-```html
-<header>
-	
-	<hgroup>
+1. On the template level:  
+	```html
+	<header>
 		
-		<h1><?=the_title()?></h1>
-		
-		<?php if (has_deck()): ?>
+		<hgroup>
 			
-			<h2 class="sh4"><?=get_deck()?></h2>
+			<h1><?=the_title()?></h1>
 			
-		<?php endif; ?>
+			<?php if (has_deck()): ?>
+				
+				<h2 class="sh4"><?=get_deck()?></h2>
+				
+			<?php endif; ?>
+			
+		</hgroup>
 		
-	</hgroup>
-	
-</header>
-```
+	</header>
+	```
+
+1. Create a post with a title like:  
+	> First half | Second half  
+
+	Where **"First half"** = `title` & **"Second half"** = `deck`.
 
 Feedback? Use [this repo's issue tracker](https://github.com/mhulse/wp-deck/issues). Thanks!
+
+---
+
+#### API
+
+There is none. Nor is there an admin interface. I personally like plugins that don't have so much overhead.
+
+If you want to change the delimiter, crack open `deck.php` and change this line:
+
+```php
+public static $delim = '|'; // Feel free to change this.
+```
+
+Sorry that it's not easier. :(
 
 ---
 

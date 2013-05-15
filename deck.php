@@ -40,7 +40,7 @@ if ( ! function_exists('add_action')) {
 class Deck
 {
 	
-	public static $delim = '|';
+	public static $delim = '|'; // Feel free to change this.
 	
 	/**
 	 * Constructor.
