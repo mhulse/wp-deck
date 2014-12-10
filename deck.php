@@ -160,8 +160,44 @@ class Deck
 	
 	static private function title_or_deck($title, $part = 'current') {
 		
-		# ((if there's no delim) ? (if the deck is requested return an empty string, otherwise return the unaltered title) : return the filtered title or deck)
-		return (( ! strpos($title, self::$delim)) ? (($part == 'end') ? '' : $title) : trim($part(explode(self::$delim, $title))));
+		# Compact logic:
+		# ((if there's no delim) ? (if the deck is requested return an empty string, otherwise return the unaltered title) : return the filtered title or deck using a string function)
+		//return (( ! strpos($title, self::$delim)) ? (($part == 'end') ? '' : $title) : trim($part()));
+		
+		# Verbose logic follows, due to:
+		# https://github.com/mhulse/wp-deck/issues/4
+		
+		# Setup return value:
+		$return = '';
+		
+		# If there's no delim ...
+		if ( ! strpos($title, self::$delim)) {
+			
+			# This could be tighter, but I like the readability here:
+			if ($part == 'end') {
+				
+				# ... and the deck is requested, return an empty string:
+				$return = '';
+				
+			} else {
+				
+				# ... otherwise, return the unaltered title:
+				$return = $title;
+				
+			}
+			
+		} else {
+			
+			# Return the filtered title or deck:
+			$return = explode(self::$delim, $title);
+			
+			# ... using a function as a string (e.g., `current()` or `end()`):
+			$return = trim($part($return));
+			
+		}
+		
+		# Bring this sucker home:
+		return $return;
 		
 	}
 	
